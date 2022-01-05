@@ -1,0 +1,16 @@
+﻿@model DrawCards
+
+@foreach (Card c in Model.cards)
+{
+    <img src="@c.image"/>
+}
+
+
+<form asp-action="DrawCards">
+    <button asp-controller="Home" asp-action="DrawCards">Draw Again</button><br />
+    <button asp-controller="Home" asp-action="GetNewDeck">Get New Deck</button><br />
+
+
+</form>
+
+
